@@ -1,7 +1,10 @@
-default[:spark][:git_repository] = "https://github.com/mesos/spark.git"
-#default[:spark][:git_revision] = "refs/tags/v0.7.0"
+default[:spark][:git_repository] = "https://github.com/apache/spark.git"
+# default[:spark][:git_revision] = "refs/tags/v0.7.0"
 default[:spark][:git_revision] = "master"
-default[:spark][:username] = "holden"
-default[:spark][:group] = "holden"
-default[:spark][:home] = "/home/holden/sparkhome"
-default[:spark][:master_ip] = "10.0.2.15"
+default[:spark][:username] = "ubuntu"
+default[:spark][:group] = "ubuntu"
+default[:spark][:home] = "/home/ubuntu/sparkhome"
+# default[:spark][:master_ip] = "172.16.0.153"
+default[:spark][:master_ip] = "192.168.202.108"
+default[:spark][:master_port] = 7077
+default[:spark][:worker_number] = 1
